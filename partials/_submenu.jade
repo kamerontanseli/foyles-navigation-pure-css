@@ -1,0 +1,21 @@
+- var sublinks = ["All Children's Books", "Cressida Cowell", "Roald Dahl", "Julia Donaldson", "Jon Klassen", "Philip Pullman", "David Walliams", "Jacqueline Wilson", "Harry Potter", "Moomins", "Paddington", "Wimpy Kid", "Winnie-the-Pooh", "Gifts and Stationery", "Designed by Foyles", "Hobonichi Diaries", "Traveler's Notebook", "Leuchtturm", "Calendars and Diaries", "Gift Cards", "- Signed Copies", "- Big New Books", "- Pre-orders", "- Staff Picks", "- Books in the Media", "- Fiction in Translation", "- A Year of Books", "Events", "Venue Hire", "Blog", "Author Q&As", "All Shops", "Charing Cross Road", "Birmingham", "Bristol"];
+
+.menu__popup
+	div(role="tabpanel").menu__container
+		label(for="close").menu__popup__close &times;
+		nav
+			ul.horizontal-links
+				li
+					a(href="#") New
+				li
+					a(href="#") Fiction & Poetry
+				li
+					a(href="#") Children's
+				li
+					a(href="#") Languages
+				li
+					a(href="#") Gifts & Stationary
+			ul.link-list
+				each link in sublinks
+					li.link-list__item
+						a(href="#")=link

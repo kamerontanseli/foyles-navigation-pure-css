@@ -1,0 +1,42 @@
+div(role="tablist", aria-label="Categories").menu
+	input(type="radio", name="categories", value="close", checked)#close.menu__close				
+	div(role="tab")
+		label(for="option1").menu__item
+			span Browse by Category
+		input(type="radio", name="categories", value="option1")#option1.menu__input
+		include _submenu.jade
+
+
+	div(role="tab")
+		label(for="option2").menu__item
+			span Childrens
+		input(type="radio", name="categories", value="option2")#option2.menu__input
+		include _submenu.jade
+
+
+	div(role="tab")
+		label(for="option3").menu__item
+			span Gifts & Stationery 
+		input(type="radio", name="categories", value="option3")#option3.menu__input
+		include _submenu.jade
+
+
+	div(role="tab")
+		label(for="option4").menu__item
+			span Events
+		input(type="radio", name="categories", value="option4")#option4.menu__input
+		include _submenu.jade
+
+
+	div(role="tab")
+		label(for="option5").menu__item
+			span Blog
+		input(type="radio", name="categories", value="option5")#option5.menu__input
+		include _submenu.jade
+
+
+	div(role="tab")
+		label(for="option6").menu__item
+			span Shops
+		input(type="radio", name="categories", value="option6")#option6.menu__input
+		include _submenu.jade

@@ -1,0 +1,15 @@
+doctype
+html(lang="en-gb")
+	head
+		title Foyles
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet" href="/main.css")
+	body
+		header.container
+			include partials/_navigation.jade
+			include partials/_menu.jade				
+
+		main.container
+			!= yield
+
+		footer.container

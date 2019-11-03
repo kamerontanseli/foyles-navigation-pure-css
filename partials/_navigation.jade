@@ -1,0 +1,30 @@
+nav
+	ul.navigation.navigation--desktop
+		li.navigation__item
+			a(href="/")
+				img(src="https://www.foyles.co.uk/Images/red_logo.png", alt="Foyles Logo").navigation__logo
+		li.navigation__item.navigation__item--grow
+			form.navigation__search(method="get", action="/search")
+				.form-control
+					label(for="search").sr-only Search by author, title, ISBN
+					input(value="", type="text", name="search", required, placeholder="Search by author, title, ISBN")#search
+				button(type="submit").button Search
+		li.navigation__item
+			a(href="/").button.button--outline Sign Up
+		li.navigation__item
+			a(href="/").button.button--outline Login
+
+	ul.navigation.navigation--mobile
+		li.navigation__top
+			.navigation__left
+				a(href="/")
+					img(src="https://www.foyles.co.uk/Images/red_logo.png", alt="Foyles Logo").navigation__logo
+			.navigation__right
+				a(href="/").button.button--outline Sign Up
+				a(href="/").button.button--outline Login
+		li.navigation__item.navigation__item--grow
+			form.navigation__search(method="get", action="/search")
+				.form-control
+					label(for="search_mobile").sr-only Search by author, title, ISBN
+					input(value="", type="text", name="search", required, placeholder="Search by author, title, ISBN")#search_mobile
+				button(type="submit").button Search	
