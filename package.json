@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "harp": "^0.31.0"
+    "harp": "^0.40.2"
   }
 }
